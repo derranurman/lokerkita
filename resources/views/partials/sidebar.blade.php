@@ -1,6 +1,6 @@
 <div class="col-lg-4 sidebar">
     <div class="single-slidebar">
-        <h4>Jobs by Location</h4>
+        <h4>Pekerjaan Berdasarkan Lokasi</h4>
         <ul class="cat-list">
             @foreach($sidebarLocations as $location)
                 <li><a class="justify-content-between d-flex" href="{{ route('locations.show', $location->id) }}"><p>{{ $location->name }}</p><span>{{ $location->jobs_count }}</span></a></li>
@@ -9,7 +9,7 @@
     </div>
 
     <div class="single-slidebar">
-        <h4>Top rated job posts</h4>
+        <h4>Top Rating Pekerjaan</h4>
         <div class="active-relatedjob-carusel">
             @foreach($sidebarJobs as $job)
                 <div class="single-rated">

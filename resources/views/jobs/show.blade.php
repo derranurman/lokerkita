@@ -28,13 +28,13 @@
         </div>
     </div>	
     <div class="single-post job-details">
-        <h4 class="single-title">Whom we are looking for</h4>
+        <h4 class="single-title">Deskripsi Pekerjaan</h4>
         <p>
             {{ $job->full_description }}
         </p>
     </div>
     <div class="single-post job-experience">
-        <h4 class="single-title">Experience Requirements</h4>
+        <h4 class="single-title">Informasi Perusahaan</h4>
         <p>
             {{ $job->requirements }}
         </p>

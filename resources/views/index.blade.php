@@ -7,12 +7,12 @@
         <div class="row fullscreen d-flex align-items-center justify-content-center">
             <div class="banner-content col-lg-12">
                 <h1 class="text-white">
-                    <span>1500+</span> Jobs posted last week				
+                    <span>99+</span> Lowongan Pekerjaan Yang Di Posting				
                 </h1>	
                 <form action="{{ route('search') }}" class="serach-form-area">
                     <div class="row justify-content-center form-wrap">
                         <div class="col-lg-4 form-cols">
-                            <input type="text" class="form-control" name="search" placeholder="What are you looking for?">
+                            <input type="text" class="form-control" name="search" placeholder="Pekerjaan apa yg sedang anda cari?">
                         </div>
                         <div class="col-lg-3 form-cols">
                             <div class="default-select" id="default-selects">
@@ -41,7 +41,7 @@
                         </div>								
                     </div>
                 </form>	
-                <p class="text-white"> <span>Search by categories:</span>
+                <p class="text-white"> <span>Cari Berdasarkan Kategori Pekerjaan:</span>
                 @foreach($searchByCategory as $id=>$searchByCategory)
                     <a href="{{ route('categories.show', $id) }}" class="text-white">{{ $searchByCategory }}</a>@if (!$loop->last),@endif
                 @endforeach
@@ -78,6 +78,6 @@
         </div>
     @endforeach
 
-    <a class="text-uppercase loadmore-btn mx-auto d-block" href="{{ route('jobs.index') }}">Load More Job Posts</a>
+    <a class="text-uppercase loadmore-btn mx-auto d-block" href="{{ route('jobs.index') }}">Tampilkan Lebih Banyak Pekerjaan</a>
 </div>	
 @endsection

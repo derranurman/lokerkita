@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="img/fav.png">
     <meta name="author" content="codepixer">
     <meta charset="UTF-8">
-    <title>{{ trans('panel.site_title') }}</title>
+    <title>Lokerkita.net | Informasi Pekerjaan</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
