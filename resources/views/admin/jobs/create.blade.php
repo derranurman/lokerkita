@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.job.title_singular') }}
+       Buat data Lowongan Pekerjaan
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.jobs.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('title') ? 'has-error' : '' }}">
-                <label for="title">{{ trans('cruds.job.fields.title') }}*</label>
+                <label for="title">Judul*</label>
                 <input type="text" id="title" name="title" class="form-control" value="{{ old('title', isset($job) ? $job->title : '') }}" required>
                 @if($errors->has('title'))
                     <em class="invalid-feedback">
@@ -22,7 +22,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('company_id') ? 'has-error' : '' }}">
-                <label for="company">{{ trans('cruds.job.fields.company') }}*</label>
+                <label for="company">Nama Perusahaan*</label>
                 <select name="company_id" id="company" class="form-control select2" required>
                     @foreach($companies as $id => $company)
                         <option value="{{ $id }}" {{ (isset($job) && $job->company ? $job->company->id : old('company_id')) == $id ? 'selected' : '' }}>{{ $company }}</option>
@@ -59,7 +59,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('requirements') ? 'has-error' : '' }}">
-                <label for="requirements">{{ trans('cruds.job.fields.requirements') }}</label>
+                <label for="requirements">Informasi kontak Perusahaan</label>
                 <textarea id="requirements" name="requirements" class="form-control ">{{ old('requirements', isset($job) ? $job->requirements : '') }}</textarea>
                 @if($errors->has('requirements'))
                     <em class="invalid-feedback">
@@ -71,7 +71,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('job_nature') ? 'has-error' : '' }}">
-                <label for="job_nature">{{ trans('cruds.job.fields.job_nature') }}</label>
+                <label for="job_nature">Sifat Pekerjaan</label>
                 <input type="text" id="job_nature" name="job_nature" class="form-control" value="{{ old('job_nature', isset($job) ? $job->job_nature : 'Full-time') }}">
                 @if($errors->has('job_nature'))
                     <em class="invalid-feedback">
@@ -96,7 +96,7 @@
                 @endif
             </div>
             <div class="form-group {{ $errors->has('address') ? 'has-error' : '' }}">
-                <label for="address">{{ trans('cruds.job.fields.address') }}</label>
+                <label for="address">Alamat</label>
                 <input type="text" id="address" name="address" class="form-control" value="{{ old('address', isset($job) ? $job->address : '') }}">
                 @if($errors->has('address'))
                     <em class="invalid-feedback">
@@ -108,7 +108,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('categories') ? 'has-error' : '' }}">
-                <label for="categories">{{ trans('cruds.job.fields.categories') }}
+                <label for="categories">Kategori
                     <span class="btn btn-info btn-xs select-all">{{ trans('global.select_all') }}</span>
                     <span class="btn btn-info btn-xs deselect-all">{{ trans('global.deselect_all') }}</span></label>
                 <select name="categories[]" id="categories" class="form-control select2" multiple="multiple">
@@ -126,7 +126,7 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('salary') ? 'has-error' : '' }}">
-                <label for="salary">{{ trans('cruds.job.fields.salary') }}*</label>
+                <label for="salary">Gaji*</label>
                 <input type="text" id="salary" name="salary" class="form-control" value="{{ old('salary', isset($job) ? $job->salary : '') }}" required>
                 @if($errors->has('salary'))
                     <em class="invalid-feedback">
@@ -158,4 +158,10 @@
 
     </div>
 </div>
+<script src="https://cdn.ckeditor.com/4.13.0/standard/ckeditor.js"></script>
+<script >
+  CKEDITOR.replace( 'requirements' );
+  CKEDITOR.replace( 'full_description' );
+
+</script>
 @endsection

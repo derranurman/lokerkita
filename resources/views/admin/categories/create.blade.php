@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.category.title_singular') }}
+        Buat Kategori Pekerjaan
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.categories.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="name">{{ trans('cruds.category.fields.name') }}*</label>
+                <label for="name">Kategori Pekerjaan*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($category) ? $category->name : '') }}" required>
                 @if($errors->has('name'))
                     <em class="invalid-feedback">

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="2b3b5328-90bc-471b-95b9-3a431ece74b4";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
     </head>
     <body>
     @include('partials.header')

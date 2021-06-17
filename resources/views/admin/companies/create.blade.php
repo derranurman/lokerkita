@@ -3,14 +3,14 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.create') }} {{ trans('cruds.company.title_singular') }}
+       Nama Perusahaan
     </div>
 
     <div class="card-body">
         <form action="{{ route("admin.companies.store") }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-                <label for="name">{{ trans('cruds.company.fields.name') }}*</label>
+                <label for="name">Nama*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($company) ? $company->name : '') }}" required>
                 @if($errors->has('name'))
                     <em class="invalid-feedback">

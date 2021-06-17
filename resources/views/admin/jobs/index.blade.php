@@ -11,7 +11,7 @@
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.job.title_singular') }} {{ trans('global.list') }}
+       Daftar Pekerjaan
     </div>
 
     <div class="card-body">

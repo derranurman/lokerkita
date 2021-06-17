@@ -17,7 +17,7 @@
                         <div class="col-lg-3 form-cols">
                             <div class="default-select" id="default-selects">
                                 <select name="location">
-                                    <option value="0">All Areas</option>
+                                    <option value="0">Semua Lokasi</option>
                                     @foreach($searchLocations as $id=>$searchLocations)
                                         <option value="{{ $id }}">{{ $searchLocations }}</option>
                                     @endforeach
@@ -27,7 +27,7 @@
                         <div class="col-lg-3 form-cols">
                             <div class="default-select" id="default-selects2">
                                 <select name="category">
-                                    <option value="0">All Categories</option>
+                                    <option value="0">Semua Kategori</option>
                                     @foreach($searchCategories as $id=>$searchCategories)
                                         <option value="{{ $id }}">{{ $searchCategories }}</option>
                                     @endforeach
@@ -36,7 +36,7 @@
                         </div>
                         <div class="col-lg-2 form-cols">
                             <button type="submit" class="btn btn-info">
-                              <span class="lnr lnr-magnifier"></span> Search
+                              <span class="lnr lnr-magnifier"></span> Cari
                             </button>
                         </div>								
                     </div>

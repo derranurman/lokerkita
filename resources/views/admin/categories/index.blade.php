@@ -4,14 +4,14 @@
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.categories.create") }}">
-                {{ trans('global.add') }} {{ trans('cruds.category.title_singular') }}
+                Tambah Kategori
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.category.title_singular') }} {{ trans('global.list') }}
+        Daftar Kategori Pekerjaan
     </div>
 
     <div class="card-body">
