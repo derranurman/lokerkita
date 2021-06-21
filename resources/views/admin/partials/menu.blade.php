@@ -58,7 +58,7 @@
                         <i class="fa-fw fas fa-tags nav-icon">
 
                         </i>
-                        {{ trans('cruds.category.title') }}
+                        Kategori Pekerjaan
                     </a>
                 </li>
             @endcan
@@ -68,7 +68,7 @@
                         <i class="fa-fw fas fa-map-marker-alt nav-icon">
 
                         </i>
-                        {{ trans('cruds.location.title') }}
+                       Tambahkan Lokasi
                     </a>
                 </li>
             @endcan
@@ -78,7 +78,7 @@
                         <i class="fa-fw fas fa-building nav-icon">
 
                         </i>
-                        {{ trans('cruds.company.title') }}
+                     Perusahaan
                     </a>
                 </li>
             @endcan
@@ -88,7 +88,7 @@
                         <i class="fa-fw fas fa-briefcase nav-icon">
 
                         </i>
-                        {{ trans('cruds.job.title') }}
+                     Tambahkan loker
                     </a>
                 </li>
             @endcan
