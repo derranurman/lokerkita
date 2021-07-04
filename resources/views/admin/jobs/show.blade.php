@@ -3,7 +3,7 @@
 
 <div class="card">
     <div class="card-header">
-        {{ trans('global.show') }} {{ trans('cruds.job.title') }}
+        Tampilkan Info Pekerjaan
     </div>
 
     <div class="card-body">
@@ -20,7 +20,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.title') }}
+                           Judul
                         </th>
                         <td>
                             {{ $job->title }}
@@ -28,7 +28,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.company') }}
+                           Nama Perusahaan
                         </th>
                         <td>
                             {{ $job->company->name ?? '' }}
@@ -52,7 +52,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.requirements') }}
+                            Informasi Perusahaan
                         </th>
                         <td>
                             {!! $job->requirements !!}
@@ -60,7 +60,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.job_nature') }}
+                            Sifat Pekerjaan
                         </th>
                         <td>
                             {{ $job->job_nature }}
@@ -68,7 +68,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.location') }}
+                            Lokasi Pekerjaan
                         </th>
                         <td>
                             {{ $job->location->name ?? '' }}
@@ -76,7 +76,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.address') }}
+                           Alamat
                         </th>
                         <td>
                             {{ $job->address }}
@@ -84,7 +84,7 @@
                     </tr>
                     <tr>
                         <th>
-                            Categories
+                            Kategori
                         </th>
                         <td>
                             @foreach($job->categories as $id => $categories)
@@ -94,7 +94,7 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.salary') }}
+                            Gaji
                         </th>
                         <td>
                             {{ $job->salary }}

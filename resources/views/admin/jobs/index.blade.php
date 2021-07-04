@@ -26,25 +26,25 @@
                             {{ trans('cruds.job.fields.id') }}
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.title') }}
+                            Judul
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.company') }}
+                            Nama Perusahaan
                         </th>
                         <th>
                             {{ trans('cruds.job.fields.short_description') }}
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.location') }}
+                            Lokasi Pekerjaan
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.address') }}
+                           Alamat
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.categories') }}
+                            Kategori
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.salary') }}
+                           Gaji
                         </th>
                         <th>
                             {{ trans('cruds.job.fields.top_rated') }}

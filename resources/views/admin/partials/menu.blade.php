@@ -92,6 +92,19 @@
                     </a>
                 </li>
             @endcan
+
+            @can('job_access')
+            <li class="nav-item">
+                <a href="{{ route("admin.users.index") }}" class="nav-link {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}">
+                    <i class="fa-fw fas fa-user nav-icon">
+
+                    </i>
+                 Ubah Password
+                </a>
+            </li>
+        @endcan
+
+            
             <li class="nav-item">
                 <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
                     <i class="nav-icon fas fa-fw fa-sign-out-alt">
